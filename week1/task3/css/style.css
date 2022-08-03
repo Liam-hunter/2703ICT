@@ -1,0 +1,18 @@
+#NavBar{
+    border: 1px solid black;
+    margin-bottom: 5%;
+}
+#post{
+    border: 1px solid black;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+#postThumbnail{
+    max-width: 40%;
+}
+/* #Content{
+    border: 1px solid black;
+}
+#personName{
+    border: 1px solid black;
+} */

@@ -1,0 +1,21 @@
+#post{
+    border: 1px solid black;
+    margin: 50px;
+    padding: 20px;
+    overflow: auto;
+}
+#content{
+    /* border: 1px solid black; */
+    width: 800px;
+    margin: auto;
+    overflow: auto;
+}
+#icon{
+    /* border: 1px solid black; */
+    float: left;
+}
+#name{
+    /* border: 1px solid black; */
+    margin: 0px;
+    padding: 0px;
+}
