@@ -13,12 +13,14 @@ $name = trim(explode(",", $query)[0]);
 $year = trim(explode(",", $query)[1]);
 $state = trim(explode(",", $query)[2]);
 
+// validate input
 if(empty($name) && empty($year) && empty($state)) {
   header("Location:index.php?error=emptyFields");
 } else if(empty($name) && empty($state) && !is_numeric($year)){
   header("Location:index.php?error=yearNotNum");
 }
 
+// set the query input values (for displaying)
 if(!empty($name)){
   $nameQuery = "Name: " . $name . "<br>";
 } else {
