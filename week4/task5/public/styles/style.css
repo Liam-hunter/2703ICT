@@ -1,0 +1,10 @@
+.table, th, td{
+    border: 1px solid black;
+}
+th{
+    background: rgb(162, 194, 231);
+}
+.error {
+    color: red;
+    font-style: italic;
+}
