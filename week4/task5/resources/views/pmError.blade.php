@@ -1,5 +1,5 @@
 @extends('pmForm')
 
 @section('errorMessage')
-    <p class="error">This is the error</p>
+    <p class="error">{{$message}}</p>
 @endsection

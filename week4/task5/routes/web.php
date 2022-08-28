@@ -32,13 +32,13 @@ Route::get('search', function()
   $year = request('year');
   $state = request('state');
 
-  if (empty($name) && empty($year) && empty($state)){
-    // empty
-    return view('pmError', ["message" => "You must enter a search parameter."]);
-  } elseif(!is_numeric($year)){
-    // number isn't empty
-    return view('pmError', ["message" => "Year must be a number"]);
-  };
+  // if (empty($name) && empty($year) && empty($state)){
+  //   // empty
+  //   return view('pmError', ["message" => "You must enter a search parameter."]);
+  // } elseif(!is_numeric($year)){
+  //   // number isn't empty
+  //   return view('pmError', ["message" => "Year must be a number"]);
+  // };
 
   // call search() to perform search
   $results = search($name, $year, $state);

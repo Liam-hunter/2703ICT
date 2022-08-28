@@ -7,6 +7,7 @@
 @section('content')
 
 <h3>Query</h3>
+{{-- {{dd($results)}} --}}
 <p>
     Name: {{$name}} <br>
     Year: {{$year}} <br>
@@ -25,16 +26,16 @@
             </tr>
         </thead>
         <tbody>
-            @forelse($results as $pm)
-                <tr>
-                    <td>{{$pm['index']}}</td>
-                    <td>{{$pm['name']}}</td>
-                    <td>{{$pm['from']}}</td>
-                    <td>{{$pm['to']}}</td>
-                    <td>{{$pm['duration']}}</td>
-                    <td>{{$pm['party']}}</td>
-                    <td>{{$pm['state']}}</td>
-                </tr>
+            @forelse ($results as $pm)
+            <tr>
+                <td>{{$pm['index']}}</td>
+                <td>{{$pm['name']}}</td>
+                <td>{{$pm['from']}}</td>
+                <td>{{$pm['to']}}</td>
+                <td>{{$pm['duration']}}</td>
+                <td>{{$pm['party']}}</td>
+                <td>{{$pm['state']}}</td>
+            </tr>
             @empty
                 No pms found
             @endforelse
