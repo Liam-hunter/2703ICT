@@ -6,6 +6,9 @@ include "includes/defs.php";
 $number = $_GET['number'];
 $fromForm = $_GET['fromForm'];
 $error = "";
+
+// check if page is loaded from get request 
+// and validate input
 if (empty($number) && $fromForm) {
   $error =  "Error: Missing value\n";
 } else if (!is_numeric($number) && $fromForm) {
@@ -24,6 +27,7 @@ if (empty($number) && $fromForm) {
   $factors = join(" . ", $factors);
   $fileName = "data/factors.txt";
 
+  // the file stuff
   // append those factors to a file
   $fp_factors = fopen($fileName, "a");
   fwrite($fp_factors, "$number = $factors<br>");
